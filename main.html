@@ -19,18 +19,40 @@
     body {
         
         text-align:  center; 
-        
         font-family: Satellite; 
         
         background: #f7cac9; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(#f7cac9, #91A8d0); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#f7cac9, #91A8d0); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#f7cac9, #91A8d0); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#f7cac9, #91A8d0w); /* Standard syntax */
-        
+        background: linear-gradient(270deg, #91a8d0, #f7cac9);
+        background-size: 400% 400%;
+
+        -webkit-animation: gradMove 15s ease infinite;
+        -moz-animation: gradMove 15s ease infinite;
+        animation: gradMove 15s ease infinite;
+
         height: 100%;
         padding: 0px 0px 0px 0px;
         height: 10000px;
+        
+    }
+    
+    @-webkit-keyframes gradMove {
+        
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    
+    @-moz-keyframes gradMove {
+        
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    
+    @keyframes gradMove { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
     }
     
     .firstPage {
@@ -44,30 +66,45 @@
     #main {
         
         margin-top: 0px; 
-        margin-bottom: 1000px; 
-        padding: 0px 0px 0px 220px;
+        padding: 0px 0px 0px 280px;
         font-size: 60px;
         color: white;
         text-align: center;
         
     }
     
-    #pitchLine {
+    
+    #appScreenshot {
         
-        padding: 0px 10px 10px 220px;
-        color: white; 
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #downloadButton {
+        
         font-size: 20px; 
+        border-radius: 25px;
+        position: absolute;
+        top: 400px;
+        left: 325px;
+        color: white; 
+        border-radius: 15px;
+        border: 2px solid white; 
+        height: 100px;
+        width: 300px; 
+        text-decoration: none; 
     }
     
-    
-    .secondPage {
+    a {
         
-        margin-top: 1000px; 
-        padding: 10px;
-        background-color: white; 
-        height: 300px;
+        
+        color: white;
+        text-decoration: none; 
         
     }
+
         </style>
     
     <body>
@@ -78,12 +115,12 @@
                 <h1>meet <br> verena.</h1>
             </div> <!--end of div id main-->
             
-            <div id = "pitchLine">
-                <h2> a personal security system <br> for the LGBTQ+ community </h2>
-            </div> <!--end of div id pitchLine-->
+            <div id = "downloadButton">
+                <h3><a href = "">download it on <br> the App Store</a></h3>
+            </div>
             
             <div id = "appScreenshot">
-                <img src = ""> <!--maybe make it a gif for maximum snazziness-->
+                <img src = "iphoneScreenshot.png" alt = "sorry, image not found!" style = "width: 700px;" > <!--maybe make it a gif for maximum snazziness-->
             </div> <!--end of div id appScreenshot-->
             
         </div> <!--end of div class firstPage-->
@@ -91,24 +128,8 @@
         <div class = "secondPage"> <!--pitch Verena here-->
             
             <div id = "openingLine">
-                <h2>here's the deal.</h2>
-            </div> <!--end of div id openingLine-->
-            
-                <h4>we got the chance to survey 35,000 people. here's how the community feels. </h4>
-               
-               <div class = "statistics"> 
-                <ul> <!--column one-->
-                    <li>insert statistic here</li>
-                    <li>insert statistic here</li>
-                    <li>insert statistic here</li>
-                </ul>
                 
-                <ul> <!--column two-->
-                    <li>insert statistic here</li>
-                    <li>insert statistic here</li>
-                    <li>insert statistic here</li>
-                </ul>
-                </div> <!--end of class statistics-->
+            </div> <!--end of div id openingLine-->
             
         </div> <!--end of div class secondPage-->
         
