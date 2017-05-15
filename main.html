@@ -6,20 +6,19 @@
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width">
-                <title>JS Bin</title>
+                <title>verena</title>
     </head>
-    
-    <script>
-        </script>
     
     <style>
         
         @font-face {
-            font-family: myFirstFont;
-            src: url(sansation_light.woff);
+            font-family: satellite;
+            src: url(satellite.otf);
         }
     
     body {
+        
+        text-align:  center; 
         
         background: #f7cac9; /* For browsers that do not support gradients */
         background: -webkit-linear-gradient(#f7cac9, #91A8d0); /* For Safari 5.1 to 6.0 */
@@ -32,18 +31,41 @@
         height: 10000px;
     }
     
+    .firstPage {
+        
+        margin-top: 0px; 
+        margin-bottom: 1000px; 
+        float: left;
+        
+    }
     
     #main {
         
-        padding: 200px 100px 100px 100px;
+        margin-top: 0px; 
+        margin-bottom: 1000px; 
+        padding: 0px 0px 0px 220px;
         font-size: 60px;
         color: white;
         text-align: center;
         
     }
     
+    #pitchLine {
+        
+        padding: 0px 10px 10px 220px;
+        color: white; 
+        font-size: 20px; 
+    }
     
     
+    .secondPage {
+        
+        margin-top: 1000px; 
+        padding: 10px;
+        background-color: white; 
+        height: 300px;
+        
+    }
         </style>
     
     <body>
@@ -51,12 +73,40 @@
         <div class = "firstPage">
             
             <div id = "main"> <!--main screen users see-->
-                <h1>meet verena.</h1>
+                <h1>meet <br> verena.</h1>
             </div> <!--end of div id main-->
+            
+            <div id = "pitchLine">
+                <h2> a personal security system <br> for the LGBTQ+ community </h2>
+            </div> <!--end of div id pitchLine-->
+            
+            <div id = "appScreenshot">
+                <img src = ""> <!--maybe make it a gif for maximum snazziness-->
+            </div> <!--end of div id appScreenshot-->
             
         </div> <!--end of div class firstPage-->
         
         <div class = "secondPage"> <!--pitch Verena here-->
+            
+            <div id = "openingLine">
+                <h2>here's the deal.</h2>
+            </div> <!--end of div id openingLine-->
+            
+                <h4>we got the chance to survey 35,000 people. here's how the community feels. </h4>
+               
+               <div class = "statistics"> 
+                <ul> <!--column one-->
+                    <li>insert statistic here</li>
+                    <li>insert statistic here</li>
+                    <li>insert statistic here</li>
+                </ul>
+                
+                <ul> <!--column two-->
+                    <li>insert statistic here</li>
+                    <li>insert statistic here</li>
+                    <li>insert statistic here</li>
+                </ul>
+                </div> <!--end of class statistics-->
             
         </div> <!--end of div class secondPage-->
         
