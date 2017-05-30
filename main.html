@@ -21,42 +21,49 @@
         text-align:  center; 
         font-family: Satellite; 
         
-        background: #f7cac9; /* For browsers that do not support gradients */
-        background: linear-gradient(270deg, #91a8d0, #f7cac9);
-        background-size: 400% 400%;
-
-        -webkit-animation: gradMove 15s ease infinite;
-        -moz-animation: gradMove 15s ease infinite;
-        animation: gradMove 15s ease infinite;
-
         height: 100%;
         padding: 0px 0px 0px 0px;
         height: 10000px;
-        
-    }
-    
+        background: linear-gradient(179deg, #91a8d0, #f7cac9);
+        background-size: 400% 400%;
+
+        -webkit-animation: gradMove 12s ease infinite;
+        -moz-animation: gradMove 12s ease infinite;
+        -o-animation: gradMove 12s ease infinite;
+        animation: gradMove 12s ease infinite;
+
+    }    
+
     @-webkit-keyframes gradMove {
         
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+        0%{background-position:37% 0%}
+        50%{background-position:64% 100%}
+        100%{background-position:37% 0%}
     }
     
     @-moz-keyframes gradMove {
         
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+        0%{background-position:37% 0%}
+        50%{background-position:64% 100%}
+        100%{background-position:37% 0%}
+    }
+    
+    @-o-keyframes gradMove {
+        
+        0%{background-position:37% 0%}
+        50%{background-position:64% 100%}
+        100%{background-position:37% 0%}
     }
     
     @keyframes gradMove { 
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+        
+        0%{background-position:37% 0%}
+        50%{background-position:64% 100%}
+        100%{background-position:37% 0%}
     }
-    
     .firstPage {
         
+        padding: 0px 0px 0px 220px;
         margin-top: 0px; 
         margin-bottom: 1000px; 
         float: left;
@@ -65,9 +72,12 @@
     
     #main {
         
-        margin-top: 0px; 
-        padding: 0px 0px 0px 280px;
-        font-size: 60px;
+        position: absolute;
+        top: 120px;
+        left: 200px;
+        padding: 10px 10px 10px 10px;
+        
+        font-size: 40px;
         color: white;
         text-align: center;
         
@@ -79,32 +89,128 @@
         position: absolute;
         top: 30px;
         right: 50px;
-        padding: 0px 0px 0px 0px;
+        padding: 10px 10px 10px 10px;
     }
 
     #downloadButton {
         
-        font-size: 20px; 
+        padding: 10px 10px 10px 10px; 
+        font-size: 25px; 
         border-radius: 25px;
         position: absolute;
-        top: 400px;
-        left: 325px;
+        top: 900px;
+        left: 300px;
         color: white; 
-        border-radius: 15px;
+        border-radius: 5px;
         border: 2px solid white; 
         height: 100px;
-        width: 300px; 
+        width: 200px; 
         text-decoration: none; 
+    }
+    
+    #gitButton {
+        
+        padding: 10px 10px 10px 10px; 
+        font-size: 25px; 
+        border-radius: 25px;
+        position: absolute;
+        top: 900px;
+        right: 300px;
+        color: white; 
+        border-radius: 5px;
+        border: 2px solid white; 
+        height: 100px;
+        width: 200px;
+        text-decoration: none; 
+    }
+    
+    #tumblrButton {
+        
+        padding: 10px 10px 10px 10px; 
+        font-size: 25px; 
+        border-radius: 25px;
+        position: absolute;
+        top: 900px;
+        right: 570px;
+        color: white; 
+        border-radius: 5px;
+        border: 2px solid white; 
+        height: 100px;
+        width: 200px;
+        text-decoration: none; 
+    }
+    
+    #gitButton:hover, #downloadButton:hover, #tumblrButton:hover {
+        
+        background-color: white;
+        color: #666666; 
+        
+    }
+    
+    #break {
+        
+        left: 80px; 
+        position: absolute; 
+        top: 850px;
+        height: 2px; 
+        width: 1200px;
+    }
+    
+    #break2 {
+        
+        left: 80px; 
+        position: absolute; 
+        top: 1050px;
+        height: 2px; 
+        width: 1200px;
+    }
+    
+    a:hover {
+        
+        color: #666666;
     }
     
     a {
         
+        color: #efefef;
+        text-decoration: none;
+    }
+    
+    .secondPage {
         
+        text-align: center; 
+        float: center; 
+    }
+    
+    #pitchLine {
+        
+        position: absolute;
+        top: 1300px;
+        font-size: 40px;
         color: white;
-        text-decoration: none; 
         
     }
-
+    
+    #greyText {
+    
+        color: #4c4c4c;
+    
+    }
+    
+    #emphasized {
+    
+    font-size: 110px;
+    
+    }
+    
+    #surveyLine {
+    
+       position: absolute;
+       top: 1700px;
+       font-size: 30px;
+       color: white;  
+    }
+    
         </style>
     
     <body>
@@ -112,34 +218,69 @@
         <div class = "firstPage">
             
             <div id = "main"> <!--main screen users see-->
-                <h1>meet <br> verena.</h1>
+                <h1>we have a <br> <div id = "emphasized"> problem. </div> <!--end of div id emphasized-->
+                    
+                   <div id = "greyText"> this is the <br> <div id = "emphasized"> solution. </div> <!--end of div id emphasized--></h1> </div> <!--end of div id greyText-->
+                
             </div> <!--end of div id main-->
             
-            <div id = "downloadButton">
-                <h3><a href = "">download it on <br> the App Store</a></h3>
-            </div>
-            
+        
             <div id = "appScreenshot">
                 <img src = "iphoneScreenshot.png" alt = "sorry, image not found!" style = "width: 700px;" > <!--maybe make it a gif for maximum snazziness-->
             </div> <!--end of div id appScreenshot-->
             
         </div> <!--end of div class firstPage-->
         
-        <div class = "secondPage"> <!--pitch Verena here-->
+        <div class = "secondPage"> <!--put app store and github here-->
             
-            <div id = "openingLine">
+                <div id = "break">
+                    <hr color = "white">
+                </div> <!--end of div id break-->
                 
-            </div> <!--end of div id openingLine-->
-            
+                <a href = "https://itunes.apple.com/us/app/verena/id1210502192?mt=8&ign-mpt=uo%3D4%26amp%3Buo%3D4">
+                <div id = "downloadButton">
+                    <h3>App Store</h3>
+                </div> <!--end of div id downloadButton-->
+                </a>
+                
+                <a href = "https://github.com/thecodingone/Verena">
+                <div id = "gitButton">
+                    <h3>GitHub</h3>
+                </div> <!--end of div id gitButton-->
+                </a>
+                
+                <a href = "https://verena-app.tumblr.com">
+                <div id = "tumblrButton">
+                    <h3>Tumblr</h3>
+                </div> <!--end of div id gitButton-->
+                </a>
+                
+               <div id = "break2">
+                    <hr color = "white">
+               </div> <!--end of div id break-->
+           
         </div> <!--end of div class secondPage-->
         
-        <div class = "thirdPage"> <!--explain tools here-->
+        <div class = "thirdPage"> <!--explain survey + statistics here-->
+            
+            <div id = "pitchLine"> 
+                <p>meet Verena. Verena is an app designed to keep you and other members of the LGBTQ+ community safe from hate crimes, abuse, and bullying.</p>
+            </div> <!--end of div id pitchLine-->
+            
+            <div id = "surveyLine"> 
+                <h3>So we asked. 35,000 people responded. Here's what they said.</h3>
+            </div> <!--end of div id surveyLine-->
+        
             
         </div> <!--end of div class thirdPage-->
         
-        <div class = "fourthPage"> <!--add reviews, contact, and donate buttons here-->
+        <div class = "fourthPage"> <!--add tools here-->
             
         </div> <!--end of div class fourthPage-->
+        
+        <div class = "fifthPage"> <!--put contacts and donations here-->
+            
+        </div> <!--end of div class fifthPage-->
         
     </body>
 </html>
