@@ -7,211 +7,273 @@
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width">
                 <title>verena</title>
-    </head>
-    
-    <style>
+                
+        <style>
         
-        @font-face {
-            font-family: satellite;
-            src: url(https://github.com/thecodingone/Verena-Website/blob/master/Satellite.otf);
-        }
-    
-    body {
+            @font-face {
+                    font-family: satellite;
+                    src: url(https://github.com/thecodingone/Verena-Website/blob/master/Satellite.otf);
+                }
+            
+            body {
+                
+                text-align:  center; 
+                font-family: Satellite; 
+                
+                height: 100%;
+                padding: 0px 0px 0px 0px;
+                height: 10000px;
+                background: linear-gradient(179deg, #91a8d0, #f7cac9);
+                background-size: 400% 400%;
         
-        text-align:  center; 
-        font-family: Satellite; 
+                -webkit-animation: gradMove 12s ease infinite;
+                -moz-animation: gradMove 12s ease infinite;
+                -o-animation: gradMove 12s ease infinite;
+                animation: gradMove 12s ease infinite;
         
-        height: 100%;
-        padding: 0px 0px 0px 0px;
-        height: 10000px;
-        background: linear-gradient(179deg, #91a8d0, #f7cac9);
-        background-size: 400% 400%;
-
-        -webkit-animation: gradMove 12s ease infinite;
-        -moz-animation: gradMove 12s ease infinite;
-        -o-animation: gradMove 12s ease infinite;
-        animation: gradMove 12s ease infinite;
-
-    }    
-
-    @-webkit-keyframes gradMove {
+            }    
         
-        0%{background-position:37% 0%}
-        50%{background-position:64% 100%}
-        100%{background-position:37% 0%}
-    }
-    
-    @-moz-keyframes gradMove {
+            @-webkit-keyframes gradMove {
+                
+                0%{background-position:37% 0%}
+                50%{background-position:64% 100%}
+                100%{background-position:37% 0%}
+            }
+            
+            @-moz-keyframes gradMove {
+                
+                0%{background-position:37% 0%}
+                50%{background-position:64% 100%}
+                100%{background-position:37% 0%}
+            }
+            
+            @-o-keyframes gradMove {
+                
+                0%{background-position:37% 0%}
+                50%{background-position:64% 100%}
+                100%{background-position:37% 0%}
+            }
+            
+            @keyframes gradMove { 
+                
+                0%{background-position:37% 0%}
+                50%{background-position:64% 100%}
+                100%{background-position:37% 0%}
+            }
+            
+            .firstPage {
+                
+                padding: 0px 0px 0px 220px;
+                margin-top: 0px; 
+                margin-bottom: 1000px; 
+                float: left;
+                
+            }
+            
+            #main {
+                
+                position: absolute;
+                top: 120px;
+                left: 200px;
+                padding: 10px 10px 10px 10px;
+                
+                font-size: 40px;
+                color: white;
+                text-align: center;
+                
+            }
+            
+            #appScreenshot {
+                
+                position: absolute;
+                top: 30px;
+                right: 50px;
+                padding: 10px 10px 10px 10px;
+            }
         
-        0%{background-position:37% 0%}
-        50%{background-position:64% 100%}
-        100%{background-position:37% 0%}
-    }
-    
-    @-o-keyframes gradMove {
+            #downloadButton {
+                
+                padding: 10px 10px 10px 10px; 
+                font-size: 25px; 
+                border-radius: 25px;
+                position: absolute;
+                top: 900px;
+                left: 300px;
+                color: white; 
+                border-radius: 5px;
+                border: 2px solid white; 
+                height: 100px;
+                width: 200px; 
+                text-decoration: none; 
+            }
+            
+            #gitButton {
+                
+                padding: 10px 10px 10px 10px; 
+                font-size: 25px; 
+                border-radius: 25px;
+                position: absolute;
+                top: 900px;
+                right: 300px;
+                color: white; 
+                border-radius: 5px;
+                border: 2px solid white; 
+                height: 100px;
+                width: 200px;
+                text-decoration: none; 
+            }
+            
+            #tumblrButton {
+                
+                padding: 10px 10px 10px 10px; 
+                font-size: 25px; 
+                border-radius: 25px;
+                position: absolute;
+                top: 900px;
+                right: 570px;
+                color: white; 
+                border-radius: 5px;
+                border: 2px solid white; 
+                height: 100px;
+                width: 200px;
+                text-decoration: none; 
+            }
+            
+            #gitButton:hover, #downloadButton:hover, #tumblrButton:hover {
+                
+                background-color: white;
+                color: #666666; 
+                
+            }
+            
+            #break {
+                
+                left: 80px; 
+                position: absolute; 
+                top: 850px;
+                height: 2px; 
+                width: 1200px;
+            }
+            
+            #break2 {
+                
+                left: 80px; 
+                position: absolute; 
+                top: 1050px;
+                height: 2px; 
+                width: 1200px;
+            }
+            
+            #headerText {
+                
+                font-size: 70px; 
+                color: white; 
+                
+            }
+            
+            #text {
+                
+                font-size: 35px; 
+                color: white; 
+                
+            }
+            
+            #toolScreenshot {
+                
+                
+            }
+            
+            .floatLeft, #headerText {
+                
+                
+            }
+            
+            .floatLeft, #text {
+                
+                
+            }
+            
+            .floatLeft, #toolScreenshot {
+                
+                
+            }
+            
+            .floatRight, #headerText {
+                
+                
+            }
+            
+            .floatRight, #text {
+                
+                
+            }
+            
+            .floatRight, #toolScreenshot {
+                
+                
+            }
+            
+            a:hover {
+                
+                color: #666666;
+            }
+            
+            a {
+                
+                color: #efefef;
+                text-decoration: none;
+            }
+            
+            .secondPage {
+                
+                text-align: center; 
+                float: center; 
+            }
+            
+            #pitchLine {
+                
+                position: absolute;
+                top: 1300px;
+                font-size: 40px;
+                color: white;
+                
+            }
+            
+            #greyText {
+            
+                color: #4c4c4c;
+            
+            }
+            
+            #emphasized {
+            
+                font-size: 110px;
+            
+            }
+            
+            #bottomButton {
+                
+                padding: 10px 10px 10px 10px; 
+                font-size: 25px; 
+                border-radius: 25px;
+                color: white; 
+                border-radius: 5px;
+                border: 2px solid white; 
+                height: 100px;
+                width: 200px; 
+                text-decoration: none; 
+                
+            }
+            
+            #bottomButton:hover {
+                
+                background-color: #666666;
+                color: #FFFFFF; 
+                
+            }
         
-        0%{background-position:37% 0%}
-        50%{background-position:64% 100%}
-        100%{background-position:37% 0%}
-    }
-    
-    @keyframes gradMove { 
-        
-        0%{background-position:37% 0%}
-        50%{background-position:64% 100%}
-        100%{background-position:37% 0%}
-    }
-    .firstPage {
-        
-        padding: 0px 0px 0px 220px;
-        margin-top: 0px; 
-        margin-bottom: 1000px; 
-        float: left;
-        
-    }
-    
-    #main {
-        
-        position: absolute;
-        top: 120px;
-        left: 200px;
-        padding: 10px 10px 10px 10px;
-        
-        font-size: 40px;
-        color: white;
-        text-align: center;
-        
-    }
-    
-    
-    #appScreenshot {
-        
-        position: absolute;
-        top: 30px;
-        right: 50px;
-        padding: 10px 10px 10px 10px;
-    }
-
-    #downloadButton {
-        
-        padding: 10px 10px 10px 10px; 
-        font-size: 25px; 
-        border-radius: 25px;
-        position: absolute;
-        top: 900px;
-        left: 300px;
-        color: white; 
-        border-radius: 5px;
-        border: 2px solid white; 
-        height: 100px;
-        width: 200px; 
-        text-decoration: none; 
-    }
-    
-    #gitButton {
-        
-        padding: 10px 10px 10px 10px; 
-        font-size: 25px; 
-        border-radius: 25px;
-        position: absolute;
-        top: 900px;
-        right: 300px;
-        color: white; 
-        border-radius: 5px;
-        border: 2px solid white; 
-        height: 100px;
-        width: 200px;
-        text-decoration: none; 
-    }
-    
-    #tumblrButton {
-        
-        padding: 10px 10px 10px 10px; 
-        font-size: 25px; 
-        border-radius: 25px;
-        position: absolute;
-        top: 900px;
-        right: 570px;
-        color: white; 
-        border-radius: 5px;
-        border: 2px solid white; 
-        height: 100px;
-        width: 200px;
-        text-decoration: none; 
-    }
-    
-    #gitButton:hover, #downloadButton:hover, #tumblrButton:hover {
-        
-        background-color: white;
-        color: #666666; 
-        
-    }
-    
-    #break {
-        
-        left: 80px; 
-        position: absolute; 
-        top: 850px;
-        height: 2px; 
-        width: 1200px;
-    }
-    
-    #break2 {
-        
-        left: 80px; 
-        position: absolute; 
-        top: 1050px;
-        height: 2px; 
-        width: 1200px;
-    }
-    
-    a:hover {
-        
-        color: #666666;
-    }
-    
-    a {
-        
-        color: #efefef;
-        text-decoration: none;
-    }
-    
-    .secondPage {
-        
-        text-align: center; 
-        float: center; 
-    }
-    
-    #pitchLine {
-        
-        position: absolute;
-        top: 1300px;
-        font-size: 40px;
-        color: white;
-        
-    }
-    
-    #greyText {
-    
-        color: #4c4c4c;
-    
-    }
-    
-    #emphasized {
-    
-        font-size: 110px;
-    
-    }
-    
-    #surveyLine {
-    
-       position: absolute;
-       top: 1700px;
-       font-size: 30px;
-       color: white;  
-    }
-    
         </style>
+    </head>
     
     <body>
         
@@ -266,21 +328,137 @@
             <div id = "pitchLine"> 
             
                 <h3>meet Verena.</h3>
-                <p>Verena is an app designed to keep you and other members of the LGBTQ+ community safe from hate crimes, abuse, and bullying.</p>
+                <p>Verena is an app designed to keep you and other members of the LGBTQ+ community safe from hate crimes, abuse, and bullying. the app works as your personal security system, to make sure you get home safe. </p>
             </div> <!--end of div id pitchLine-->
             
-            <div id = "surveyLine"> 
-                <h3>So we asked. 35,000 people responded. Here's what they said.</h3>
-            </div> <!--end of div id surveyLine-->
-        
             
         </div> <!--end of div class thirdPage-->
         
-        <div class = "fourthPage"> <!--add tools here-->
+        <div class = "fourthPage"> <!--add tools + features here-->
             
+            <div class = "floatLeft"> <!--float image right, text left-->
+                
+                <div id = "headerText">
+                    <h1>your security comes first.</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p>from the ground up, Verena is designed to keep you safe. the app stores all of your information locally, so nothing gets sent to 3rd party servers. your information is also saved in Keychain, an Apple API which encrypts your information, and will not be shared with anyone besides you. in addition, you're required to have a strong password and username. without, no one can get access to the app, or your info.</p> <!--description of the security measures-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+            
+            </div> <!--end of div class floatLeft-->
+            
+            <div class = "floatRight"> <!--float image left, text right-->
+                
+                <div id = "headerText">
+                    <h1>designed with you in mind.</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p> </p> <!--description of user friendliness / contacts / preferences-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+              
+            </div> <!--end of div class floatRight-->
+            
+            <div class = "floatLeft">
+                
+                 <div id = "headerText">
+                    <h1>protect the app from prying eyes.</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p> </p> <!--description of incognito mode-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+                
+            </div> <!--end of div class floatLeft-->
+            
+            <div class = "floatRight">
+                
+                 <div id = "headerText">
+                    <h1>record hate crimes, abuse, or bullying.</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p> </p> <!--description of incident log-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+                
+            </div> <!--end of div class floatRight-->
+        
+            <div class = "floatLeft">
+                
+                 <div id = "headerText">
+                    <h1>get through an emergency</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p> </p> <!--description of emergency-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+                
+            </div> <!--end of div class floatLeft-->
+            
+            <div class = "floatRight">
+                
+                 <div id = "headerText">
+                    <h1>alert your contacts at the press of a button.</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p> </p> <!--description of emergency access-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+                
+            </div> <!--end of div class floatRight-->
+        
+            <div class = "floatLeft">
+                
+                 <div id = "headerText">
+                    <h1>find and go to help.</h1>
+                </div> <!--end of div id headerText-->
+                
+                <div id = "text">
+                    <p> </p> <!--description of resources-->
+                </div> <!--end of div id text-->
+                
+                <div id = "toolScreenshot">
+                    <img src = "">
+                <!--end of div id toolScreenshot-->
+               
+            </div> <!--end of div class floatLeft-->
+        
         </div> <!--end of div class fourthPage-->
         
         <div class = "fifthPage"> <!--put contacts and donations here-->
+            
+            <div id = "bottomButton">
+                <a href = ""><h3>contact us</h3></a>
+            </div> <!--end of div id bottomButton-->
+            
+            <div id = "bottomButton">
+                <a href = ""><h3>donate to us</h3></a>
+            </div> <!--end of div id bottomButton-->
             
         </div> <!--end of div class fifthPage-->
         
