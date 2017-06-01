@@ -20,6 +20,8 @@
                 text-align:  center; 
                 font-family: Satellite; 
                 
+                position: relative;
+                
                 height: 100%;
                 padding: 0px 0px 0px 0px;
                 height: 10000px;
@@ -72,10 +74,8 @@
             
             #main {
                 
-                position: absolute;
-                top: 120px;
-                left: 200px;
-                padding: 10px 10px 10px 10px;
+                position: relative;
+                padding: 100px 10px 0px 300px;
                 
                 font-size: 40px;
                 color: white;
@@ -85,20 +85,18 @@
             
             #appScreenshot {
                 
-                position: absolute;
-                top: 30px;
-                right: 50px;
-                padding: 10px 10px 10px 10px;
+                position: relative;
+                padding: 30px 0px 0px 400px;
             }
         
-            #downloadButton {
+            #downloadButton, #gitButton, #tumblrButton {
                 
+                float: left; 
                 padding: 10px 10px 10px 10px; 
+                margin: 20px 100px 20px 100px;
                 font-size: 25px; 
                 border-radius: 25px;
-                position: absolute;
-                top: 900px;
-                left: 300px;
+                position: relative;
                 color: white; 
                 border-radius: 5px;
                 border: 2px solid white; 
@@ -107,37 +105,6 @@
                 text-decoration: none; 
             }
             
-            #gitButton {
-                
-                padding: 10px 10px 10px 10px; 
-                font-size: 25px; 
-                border-radius: 25px;
-                position: absolute;
-                top: 900px;
-                right: 300px;
-                color: white; 
-                border-radius: 5px;
-                border: 2px solid white; 
-                height: 100px;
-                width: 200px;
-                text-decoration: none; 
-            }
-            
-            #tumblrButton {
-                
-                padding: 10px 10px 10px 10px; 
-                font-size: 25px; 
-                border-radius: 25px;
-                position: absolute;
-                top: 900px;
-                right: 570px;
-                color: white; 
-                border-radius: 5px;
-                border: 2px solid white; 
-                height: 100px;
-                width: 200px;
-                text-decoration: none; 
-            }
             
             #gitButton:hover, #downloadButton:hover, #tumblrButton:hover {
                 
@@ -146,34 +113,32 @@
                 
             }
             
-            #break {
+            .buttons {
                 
-                left: 80px; 
-                position: absolute; 
-                top: 850px;
-                height: 2px; 
-                width: 1200px;
+                display: inline; 
+                
             }
             
-            #break2 {
+            #break, #break2 {
                 
-                left: 80px; 
-                position: absolute; 
-                top: 1050px;
+                float: center;
+                padding: 100px; 
+                position: relative;
                 height: 2px; 
-                width: 1200px;
+                width: device-width;
             }
+        
             
             #headerText {
                 
-                font-size: 70px; 
+                font-size: 30px; 
                 color: white; 
                 
             }
             
             #text {
                 
-                font-size: 35px; 
+                font-size: 20px; 
                 color: white; 
                 
             }
@@ -283,7 +248,7 @@
                 <h1>we have a <br> <div id = "emphasized"> problem. </div> <!--end of div id emphasized-->
                     
                    <div id = "greyText"> this is the <br> <div id = "emphasized"> solution. </div> <!--end of div id emphasized--></h1> </div> <!--end of div id greyText-->
-                
+                </h1>
             </div> <!--end of div id main-->
             
         
@@ -299,24 +264,32 @@
                     <hr color = "white">
                 </div> <!--end of div id break-->
                 
-                <a href = "https://itunes.apple.com/us/app/verena/id1210502192?mt=8&ign-mpt=uo%3D4%26amp%3Buo%3D4">
-                <div id = "downloadButton">
-                    <h3>App Store</h3>
-                </div> <!--end of div id downloadButton-->
-                </a>
+                <br>                
                 
-                <a href = "https://github.com/thecodingone/Verena">
-                <div id = "gitButton">
-                    <h3>GitHub</h3>
-                </div> <!--end of div id gitButton-->
-                </a>
+                <div class = "buttons">
                 
-                <a href = "https://verena-app.tumblr.com">
-                <div id = "tumblrButton">
-                    <h3>Tumblr</h3>
-                </div> <!--end of div id gitButton-->
-                </a>
+                    <a href = "https://itunes.apple.com/us/app/verena/id1210502192?mt=8&ign-mpt=uo%3D4%26amp%3Buo%3D4">
+                    <div id = "downloadButton">
+                        <h3>App Store</h3>
+                    </div> <!--end of div id downloadButton-->
+                    </a>
+                    
+                    <a href = "https://github.com/thecodingone/Verena">
+                    <div id = "gitButton">
+                        <h3>GitHub</h3>
+                    </div> <!--end of div id gitButton-->
+                    </a>
+                    
+                    <a href = "https://verena-app.tumblr.com">
+                    <div id = "tumblrButton">
+                        <h3>Tumblr</h3>
+                    </div> <!--end of div id gitButton-->
+                    </a>
                 
+                </div> <!--end of div class buttons-->
+                
+                 <br>  
+                 
                <div id = "break2">
                     <hr color = "white">
                </div> <!--end of div id break-->
@@ -359,7 +332,7 @@
                 </div> <!--end of div id headerText-->
                 
                 <div id = "text">
-                    <p> </p> <!--description of user friendliness / contacts / preferences-->
+                    <p>blah blah blah filler text</p> <!--description of user friendliness / contacts / preferences-->
                 </div> <!--end of div id text-->
                 
                 <div id = "toolScreenshot">
@@ -375,7 +348,7 @@
                 </div> <!--end of div id headerText-->
                 
                 <div id = "text">
-                    <p> </p> <!--description of incognito mode-->
+                    <p> blah blah blah filler text</p> <!--description of incognito mode-->
                 </div> <!--end of div id text-->
                 
                 <div id = "toolScreenshot">
@@ -391,7 +364,7 @@
                 </div> <!--end of div id headerText-->
                 
                 <div id = "text">
-                    <p> </p> <!--description of incident log-->
+                    <p> blah blah blah filler text</p> <!--description of incident log-->
                 </div> <!--end of div id text-->
                 
                 <div id = "toolScreenshot">
@@ -407,7 +380,7 @@
                 </div> <!--end of div id headerText-->
                 
                 <div id = "text">
-                    <p> </p> <!--description of emergency-->
+                    <p> blah blah blah filler text</p> <!--description of emergency-->
                 </div> <!--end of div id text-->
                 
                 <div id = "toolScreenshot">
@@ -423,7 +396,7 @@
                 </div> <!--end of div id headerText-->
                 
                 <div id = "text">
-                    <p> </p> <!--description of emergency access-->
+                    <p> blah blah blah filler text</p> <!--description of emergency access-->
                 </div> <!--end of div id text-->
                 
                 <div id = "toolScreenshot">
@@ -439,7 +412,7 @@
                 </div> <!--end of div id headerText-->
                 
                 <div id = "text">
-                    <p> </p> <!--description of resources-->
+                    <p> blah blah blah filler text</p> <!--description of resources-->
                 </div> <!--end of div id text-->
                 
                 <div id = "toolScreenshot">
